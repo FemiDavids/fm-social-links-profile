@@ -1,4 +1,14 @@
 :root {
+  /* primary */
+  --clr-green: hsl(75, 94%, 57%);
+
+  /* neutral */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+
+  /* typography */
   --ff: "Inter", sans-serif;
 
   --fw-regular: 400;
@@ -26,6 +36,87 @@ html {
 body {
   font-family: var(--ff);
   font-size: var(--fs-16);
+  line-height: 1.2;
+  min-height: 100vh;
+  background-color: var(--clr-off-black);
+}
+
+main {
+  min-height: 98vh;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 35rem;
+  /* border: 1px solid var(--clr-white); */
+  border-radius: 8px;
+  background-color: var(--clr-dark-grey);
+  padding: 3.2rem;
+}
+
+.card-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-header__avatar {
+  width: 8rem;
+  height: 8rem;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.card-header__avatar img {
+  display: block;
+  width: 100%;
+}
+
+.card-header__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header__info .name {
+  font-size: 2.4rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.card-header__info .location {
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+}
+
+.card-header__info .quote {
+  font-size: 1.4rem;
+  font-weight: var(--fw-medium);
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cta:link,
+.cta:visited {
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 1.2rem 1.6rem;
+  border-radius: 6px;
+  font-size: var(--fs-14);
+  color: var(--clr-white);
+  text-align: center;
+  font-weight: var(--fw-semi-bold);
+  background-color: var(--clr-grey);
+}
+.cta:hover,
+.cta:active {
+  background-color: var(--clr-green);
 }
 
 .attribution {
