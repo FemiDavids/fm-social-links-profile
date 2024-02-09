@@ -61,6 +61,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  gap: 2.8rem;
 }
 
 .card-header__avatar {
@@ -83,16 +84,22 @@ main {
 .card-header__info .name {
   font-size: 2.4rem;
   font-weight: var(--fw-semi-bold);
+  color: var(--clr-white);
+  margin-bottom: 0.4rem;
 }
 
 .card-header__info .location {
   font-size: 1.4rem;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-green);
+  margin-bottom: 2.4rem;
 }
 
 .card-header__info .quote {
   font-size: 1.4rem;
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+  margin-bottom: 2.4rem;
 }
 
 .social-links {
