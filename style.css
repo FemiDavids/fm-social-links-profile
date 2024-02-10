@@ -42,17 +42,32 @@ body {
 }
 
 main {
-  min-height: 98vh;
+  margin: 0 1.6rem;
+  max-width: 144rem;
+  min-height: 93vh;
   display: grid;
   place-content: center;
 }
 
+@media (max-width: 375px) {
+  main {
+    margin: 0 2.4rem;
+  }
+}
+
 .container {
-  max-width: 40rem;
+  width: 35rem;
   /* border: 1px solid var(--clr-white); */
   border-radius: 8px;
   background-color: var(--clr-dark-grey);
-  padding: 3.2rem;
+  padding: 3.6rem;
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 33rem;
+    padding: 2.4rem;
+  }
 }
 
 .card-header {
@@ -96,7 +111,7 @@ main {
 }
 
 .card-header__info .quote {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: var(--fw-regular);
   color: var(--clr-white);
   margin-bottom: 2.4rem;
@@ -124,12 +139,15 @@ main {
 .cta:hover,
 .cta:active {
   background-color: var(--clr-green);
+  color: var(--clr-dark-grey);
 }
 
 .attribution {
+  padding: 1.6rem;
   font-size: 11px;
   text-align: center;
+  color: var(--clr-grey);
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-white);
 }
