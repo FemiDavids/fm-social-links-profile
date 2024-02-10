@@ -48,7 +48,7 @@ main {
 }
 
 .container {
-  max-width: 35rem;
+  max-width: 40rem;
   /* border: 1px solid var(--clr-white); */
   border-radius: 8px;
   background-color: var(--clr-dark-grey);
@@ -96,7 +96,7 @@ main {
 }
 
 .card-header__info .quote {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: var(--fw-regular);
   color: var(--clr-white);
   margin-bottom: 2.4rem;
